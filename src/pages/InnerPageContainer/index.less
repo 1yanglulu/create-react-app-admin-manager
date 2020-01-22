@@ -1,0 +1,31 @@
+.page-container-outer-scroll{
+  max-height: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-height: 280px;
+  overflow: auto;
+  -webkit-flex: 1 1;
+  flex: 1 1;
+  &::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+    border-radius: 1000px;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #00c17b;
+    background-clip: padding-box;
+    border-radius: 1000px;
+  }
+}
+.page-header :global(.ant-page-header-heading-title){
+  width: 100%;
+  color: #00c17b;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.page-container{
+  padding:12px;
+}
